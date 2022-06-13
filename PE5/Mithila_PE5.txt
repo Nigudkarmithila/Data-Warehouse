@@ -1,0 +1,122 @@
+/* ISTE 724 Data Warehousing
+PE 5
+Mithila Nigudkar */
+
+data ImpExt;
+infile '/home/u59825035/pe5/DW211/patient.txt' dsd delimiter=';' firstobs=1;
+input patientNo $ gender $ visit $ HR SBP DBP DX $ AE $;
+run;
+*print the list of patients;
+proc print data=ImpExt;
+	title 'List of patients';
+	run; 
+	
+	*Cleaning patientNo and assign unique patient number;
+
+data ImpExt;
+modify ImpExt;
+if anyalpha(patientNo) then patientNo = translate(patientNo, '0' , 'X');
+if missing(patientNo) then patientNo=rand('integer' , 30,60);
+run;
+
+proc print data=ImpExt;
+title "Clean patientNo";
+run; 
+
+*Missing dates;
+data ImpExt;
+modify ImpExt;
+if missing(visit) then visit ='01011900';
+
+* clean if visit month is greater than 12;
+month =substr(visit, 1,2);
+if month>12 then month=cat('12' ,substr(visit, 3,6));
+
+*clean if visit date greater than 31;
+day=substr(visit, 1,2);
+if day>31 then visit=cat(substr(visit, 1,2), '31', substr(visit, 5,4));
+
+
+*clean if visit year greater than 1999;
+year=substr(visit,5,4);
+if year>1999 then visit =cat(substr(visit, 1,4), '1999');
+
+
+*left over
+digit=anydigit(visit);
+if digit = 0 then visit ='01011900';
+year=substr(visit,5,2);
+if length(visit) <8 then visit=cat(substr(visit, 1,4),'19', year);
+run;
+
+proc print data=ImpExt;
+title "Cleaned visit dates";
+run;
+ 
+*Cleaning HR column;
+data ImpExt;
+modify ImpExt;
+if missing(HR) then HR =40;
+if HR < 40 then HR =40;
+if HR>100 then HR=100;
+run;
+proc print data=ImpExt;
+title "Cleaned HR";
+run;
+
+
+*Cleaning SBP column;
+data ImpExt;
+modify ImpExt;
+if missing(SBP) then SBP =80;
+if SBP < 80 then SBP =80;
+if SBP>200 then SBP=200;
+run;
+proc print data=ImpExt;
+title "Cleaned SBP";
+run;
+
+
+*Cleaning DBP column;
+data ImpExt;
+modify ImpExt;
+if missing(DBP) then SBP =60;
+if DBP < 60 then DBP =60;
+if DBP>120 then DBP=120;
+run;
+proc print data=ImpExt;
+title "Cleaned DBP";
+run;
+
+*Cleaning DX column;
+data ImpExt;
+modify ImpExt;
+if missing(DX) then DX ='999';
+digit=anydigit(DX);
+if digit = 0 then DX='999';
+proc print data=ImpExt;
+title "Cleaned DX";
+run;
+ 
+*Clening AE column;
+data ImpExt;
+modify ImpExt;
+if missing(AE) then AE ='0';
+if AE not in 0('0' , '1') then AE ='0';
+proc print data=ImpExt;
+title"CLeaned AE";
+run;
+
+*Removing duplicates and sorting data;
+proc sort data=ImpExt noduprecs;
+by patientNo;
+run;
+
+*Exporting the clean data;
+proc export data = ImpExt outfile ='\D:\Fall 2021\Data warehousing\PE5;
+DBMS= tab replace;
+delimiter=';';
+run;
+
+
+
