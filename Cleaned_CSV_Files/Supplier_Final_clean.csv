@@ -1,0 +1,15 @@
+Supplier_SK,Supplier_ID(NK),Name,Addr1,Addr2,City,State,Zip
+1,7,Afg Industries Inc.               ,Attn : Dorothy Polk           ,5377 Cookbook Circle      ,Vero Beach          ,FL    ,32967
+2,8,American General Ventures Inc.    ,Attn : Kimberly Yarborough    ,1616 Goggles Drive        ,Sterling            ,KS    ,67579
+3,3,Black Hills Corporation           ,Attn : Edena Gilbert          ,1618 Greenland Street     ,Tallahassee         ,FL    ,32304
+4,5,Dollar General Corporation        ,Attn : Antoinette Hickey      ,3988 Chanced Avenue       ,S Middleton         ,PA    ,17007
+5,9,Fedders Corporation               ,Attn : Virgil Hubert          ,7844 Carelessly Drive     ,Overlook            ,WA    ,98366
+6,6,First Bancshares Inc. Mo          ,Attn : Jensine Lease          ,11885 Aural Turnpike      ,Louisville          ,KY    ,40253
+7,4,Immunex Corporation               ,Attn : Elbert Glad            ,5841 Pervades Drive       ,Fairfax             ,VA    ,22035
+8,10,Saurer Gruppe Holding Ag          ,Attn : Pearce Valdez          ,3727 Elms Drive           ,South Saint Paul    ,MN    ,55077
+9,2,Sinclair Broadcast Group Inc.     ,Attn : Carla Shelby           ,6037 Ecuadorian Street    ,Clinton             ,MI    ,49236
+10,1,Specialty Teleconstructors Inc.   ,Attn : Zylina Cox             ,2161 Chalmers Street      ,Salinas             ,CA    ,93905
+11,22,Alpha tenet suppliers             ,Attd : hallender way          ,1246 Ontarion Street      ,Ohio                ,CL    ,12345
+12,23,The Product Company E.            ,Attn : commons street         ,1723 paratomb Avenue      ,Stratford           ,NY    ,14762
+13,24,The Product Company W.            ,Attd: Highlander street       ,9845 clearton             ,Fresno              ,CA    ,45678
+99999,,,,,,,

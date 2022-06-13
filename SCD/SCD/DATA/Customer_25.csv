@@ -1,0 +1,26 @@
+Customer_SK;CustomerID;CustomerName;Addr1;Addr2;City;State;Zip;CustTypeID;TypeName;Effective_date;Expiration_date;Flag
+1;0;Specialty Teleconstructors Inc.       ;1570 Hordes Dr.;   ;Columbia            ;SC                      ;29260;F            ;US Govt             ;2021-01-01;2999-12-31;1
+2;1;Beverly Equip.                        ;7581 Quisque St.;   ;Bloomington         ;HI                      ;88440;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+3;1;Haynes                                ;2920 Auctor Rd.;   ;Moraga              ;AZ                      ;70314;E            ;Education           ;2021-01-01;2999-12-31;1
+4;1;Room Plus Inc.                        ;6037 Ecuadorian St.;Suite 836;Clinton             ;MI                      ;49236;C            ;Commercial          ;2021-01-01;2999-12-31;1
+5;2;Clio-Hutchinson                       ;1257 Ac Ave.;   ;Butler              ;SC                      ;82126;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+6;2;Rudyard Knapp                         ;9261 Nulla St.;   ;Sault Ste. Marie    ;LA                      ;94298;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+7;2;Motts Holdings Inc.                   ;1618 Greenland St.;   ;Tallahassee         ;FL                      ;32304;E            ;Education           ;2021-01-01;2999-12-31;1
+8;3;YuliChem                              ;6440 Amet St.;   ;Laguna Woods        ;KY                      ;53141;C            ;Commercial          ;2021-01-01;2999-12-31;1
+9;3;Baxter May                             ;796-2366 Vel Ave.;   ;Meriden             ;FL                      ;58328;C            ;Commercial          ;2021-01-01;2999-12-31;1
+10;3;Beckman Coulter Inc.                  ;5841 Pervades Dr.;   ;Fairfax             ;VA                      ;22035;E            ;Education           ;2021-01-01;2999-12-31;1
+11;4;Austin Burns                          ;2041 Venenatis Ave.;   ;Alexandria          ;DC                      ;34440;E            ;Education           ;2021-01-01;2999-12-31;1
+12;4;Maya Brewer                           ;PO Box 825 6836 At Rd.;   ;Union City          ;ND                      ;82051;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+13;4;Magainin Pharmaceuticals Inc.         ;9138 Planetesimal Lane;Dept #332;Twining             ;MI                      ;48766;F            ;US Govt             ;2021-01-01;2999-12-31;1
+14;5;Saint Andrews Golf Corporation        ;8068 Substances St.;   ;North Miami         ;Fl                      ;33261;F            ;US Govt             ;2021-01-01;2999-12-31;1
+15;5;Mullins Inc.                          ;4009 Ornare Rd.;   ;Birmingham          ;NE                      ;59509;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+16;5;Sterling Financial Corporation Washing;7258 Meriting Ave.;Dept #505;Portland            ;OR                      ;97201;E            ;Education           ;2021-01-01;2999-12-31;1
+17;6;Austin Ferrell                        ;8666 Justo Rd.;   ;Pullman             ;PA                      ;55979;C            ;Commercial          ;2021-01-01;2999-12-31;1
+18;6;Raphael Allison                       ;734-2598 Sed Ave.;   ;La Crosse           ;HI                      ;58702;C            ;Commercial          ;2021-01-01;2999-12-31;1
+19;6;Fidelity National Corporation Ga      ;11455 Sheaf Dr.;Dept #915;Anthony             ;FL                      ;32617;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+20;7;Hop Adams                             ;704 Nisl Rd.;   ;Sun Valley          ;NH                      ;84458;E            ;Education           ;2021-01-01;2999-12-31;1
+21;7;Martin Donaldson                      ;2704 At Rd.;   ;Gardner             ;GA                      ;31421;E            ;Education           ;2021-01-01;2999-12-31;1
+22;7;Fedders Corporation                   ;3311 Blatantly Circle;Dept #520;Santa Fe Springs    ;CA                      ;90670;E            ;Education           ;2021-01-01;2999-12-31;1
+23;8;Mullins Inc.                          ;4009 Ornare Rd.;   ;Birmingham          ;NE                      ;59509;S            ;State_Local Gov     ;2021-01-01;2999-12-31;1
+24;8;Gemma Castro                          ;9101 Duis St.;   ;Passaic             ;VT                      ;40926;F            ;US Govt             ;2021-01-01;2999-12-31;1
+25;8;United Healthcare Corporation         ;675 Hordes Turnpike;Dept #855;Malaga              ;NM                      ;88263;E            ;Education           ;2021-01-01;2999-12-31;1
